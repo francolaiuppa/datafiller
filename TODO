@@ -1,0 +1,5 @@
+# LocalStorage para que recuerde los fields y la config si se cambia de view_table/table
+# Que te permita hacer backup desde el home
+# Hacerlo configless (que corra usando session y dsn de la database)
+## Linkear la database de la menubar para que te permita cambiarla
+# Comments para hacer los docs
