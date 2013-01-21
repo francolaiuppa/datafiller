@@ -38,29 +38,43 @@ function get_insert_rows_dropdown() {
 function get_data_filler_types_dropdown($field) {
   return '<select name="fields_fill_type['.$field.']" data-field_name="'.$field.'">
   	<option value="">Please select</option>
-  	<option value="null">NULL</option>
-  	<option value="md5">md5 of </option>
-  	<option value="fixed_value">Fixed value (Single)</option>
-  	<option value="fixed_value_multiple">Fixed value (Multiple)</option>
-    <option value="fullname">Fullname (First+Last)</option>
-    <option value="first_name">First Name</option>
-    <option value="last_name">Last Name</option>
-    <option value="email">Email</option>
-    <option value="country">Country</option>
-    <option value="other_table_key">Other table field</option>
-    <option value="current_date">Current Date (Y-m-d)</option>
-    <option value="current_datetime">Current DateTime (Y-m-d H:i:s)</option>
-    <option value="current_mktime">Current mktime()</option>
-    <option value="current_time">Current Time (H:i:s)</option>
-    <option value="integer">Integer (No decimal numbers)</option>
-    <option value="float">Float (Decimal numbers)</option>
-    <option value="address">Address</option>
-    <option value="phone">Phone</option>
-    <option value="ip">IP Address</option>
-    <option value="between_dates_date">Random between two dates (date)</option>
-    <option value="between_dates_datetime">Random between two dates (datetime)</option>
-    <option value="between_dates_mktime">Random between two dates (mktime)</option>
-    <option value="url">URL</option>
+  	<optgroup label="Other tables">
+  		<option value="other_table_key">Other table field</option>
+  	</optgroup>
+  	<optgroup label="Fixed">
+  		<option value="null">NULL</option>
+  		<option value="fixed_value">Fixed value (Single)</option>
+  		<option value="fixed_value_multiple">Fixed value (Multiple)</option>
+  	</optgroup>
+  	<optgroup label="Extras">
+  		<option value="md5">md5 of </option>
+  		<option value="ip">IP Address</option>
+    	<option value="url">URL</option>
+		</optgroup>
+		<optgroup label="Date and Time">
+			<option value="current_date">Current Date (Y-m-d)</option>
+	    <option value="current_datetime">Current DateTime (Y-m-d H:i:s)</option>
+	    <option value="current_mktime">Current mktime()</option>
+	    <option value="current_time">Current Time (H:i:s)</option>
+	    <option value="between_dates_date">Random between two dates (date)</option>
+    	<option value="between_dates_datetime">Random between two dates (datetime)</option>
+    	<option value="between_dates_mktime">Random between two dates (mktime)</option>
+		</optgroup>
+		<optgroup label="Numbers">
+   		<option value="integer">Integer (No decimal numbers)</option>
+   		<option value="float">Float (Decimal numbers)</option>
+		</optgroup>
+		<optgroup label="Personal">
+	    <option value="fullname">Fullname (First+Last)</option>
+	    <option value="first_name">First Name</option>
+	    <option value="last_name">Last Name</option>
+	    <option value="email">Email</option>
+	    <option value="country">Country</option>
+	    <option value="address">Address</option>
+	    <option value="phone">Phone</option>
+		</optgroup>
+
+
   </select>';
 }
 
