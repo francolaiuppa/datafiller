@@ -45,6 +45,8 @@ $route['about'] = 'main/about';
 $route['backup'] = 'main/backup';
 $route['view/(:any)'] = 'main/view_table/$1';
 $route['truncate/(:any)'] = 'main/truncate/$1';
+$route['setup'] = 'main/setup';
+$route['setup/(:any)'] = 'main/setup/$1';
 
 
 /* End of file routes.php */

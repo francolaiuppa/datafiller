@@ -26,7 +26,7 @@
       #current_database_navbar {
 				color: #FFFFFF;
 				display: block;
-				left: 200px;
+				left: 260px;
 				position: absolute;
 				top: 10px;
 				width: 420px;
@@ -60,10 +60,11 @@
           <a class="brand" href="<?=site_url('/')?>">Data Filler</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
+              <li><a href="<?=site_url('setup')?>"><strong>Setup</strong></a></li>
               <li><a href="<?=site_url('about')?>">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
-					<p id="current_database_navbar">Current database <span class="label label-inverse"><?=get_current_database_name()?></span></p>
+					<p id="current_database_navbar">Current database <span class="label label-success"><?=get_current_database_name()?></span></p>
 
         </div>
       </div>
@@ -72,13 +73,19 @@
     <div class="container-fluid">
 
         <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Tables</li>
-              <?php if (!isset($current_table)) { $current_table = null; } ?>
-              <?=get_table_li_items($current_table)?>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
+
+            	<?php 
+							if (!isset($current_table)) { $current_table = null; }
+              $table_li_items = get_table_li_items($current_table);
+              if ($table_li_items != '') { ?>
+								<div class="span3">
+									<div class="well sidebar-nav">
+										<ul class="nav nav-list">
+											<li class="nav-header">Tables</li>
+											<?=$table_li_items?>
+										</ul>
+									</div><!--/.well -->
+								</div><!--/span-->
+              <?php } ?>
+
         <div class="span9">

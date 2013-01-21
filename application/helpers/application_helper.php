@@ -2,13 +2,21 @@
 // here we will have the helper functions
 function get_tables_array() {
 	$CI =& get_instance();
+	if (!$CI->session->userdata('dsn')) { 
+		return false; 
+}
 	$tables = $CI->db->list_tables();
 	return $tables; 
 }
 
 
 function get_table_li_items($current_table = null) {
+	$CI =& get_instance();
+	if (!$CI->session->userdata('database')) {
+		return '';
+	}
 	$tables = get_tables_array();
+	if (!$tables) { return ''; }
 	$result = '';
 	foreach ($tables as $table) {
 		$selected = '';
@@ -58,7 +66,10 @@ function get_data_filler_types_dropdown($field) {
 
 function get_current_database_name() {
 	$CI =& get_instance();
-	return $CI->db->database;
+	if ($CI->session->userdata('dsn')) {
+		return $CI->db->database;
+	}
+	return false;
 }
 
 function get_hardcoded_data_item($key) {
