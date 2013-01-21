@@ -6,7 +6,9 @@ Random Data Filler for databases using GUI! Supports various types of SQL vendor
 How to use
 ----------
 
-- Modify application/config/database.php accordingly. You will see which database you are working on by checking the navbar.
+- Open and fill with your database details
 - Done!
 
-Really. The rest is self explanatory!
+Really. That's all!
+
+If you want to contact me you can do it a franco.laiuppa [ a t ] gmail.com
