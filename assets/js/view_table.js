@@ -11,7 +11,7 @@ table.set_dynamic = function(that,data) {
 
 table.random_data_item_select_change_handler = function(e){
 	var that = $(this);
-	var selected_option = that.children('option:selected');
+	var selected_option = that.find('option:selected');
 	var selected_option_val = selected_option.val();
 	var field_name = that.data('field_name');
 

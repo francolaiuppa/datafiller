@@ -73,8 +73,6 @@ function get_data_filler_types_dropdown($field) {
 	    <option value="address">Address</option>
 	    <option value="phone">Phone</option>
 		</optgroup>
-
-
   </select>';
 }
 
