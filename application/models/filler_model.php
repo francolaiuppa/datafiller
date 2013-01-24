@@ -138,6 +138,13 @@ class Filler_model extends CI_Model {
 				return rand($start_date,$end_date);
 			break;
 
+			case 'lorem_ipsum':
+				$data = get_hardcoded_data('lorem_ipsum');
+				$data = explode(' ',str_replace(array('.',','),'',$data));
+				shuffle($data);
+				return 'Lorem ipsum sit dolorem et amet, consecteur adiscipi velit '.substr(implode(' ',$data),0,2500);
+			break;
+
 		} 
 	}
 

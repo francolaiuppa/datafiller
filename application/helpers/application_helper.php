@@ -50,6 +50,7 @@ function get_data_filler_types_dropdown($field) {
   		<option value="md5">md5 of </option>
   		<option value="ip">IP Address</option>
     	<option value="url">URL</option>
+    	<option value="lorem_ipsum">Lorem Ipsum</option>
 		</optgroup>
 		<optgroup label="Date and Time">
 			<option value="current_date">Current Date (Y-m-d)</option>
@@ -2240,7 +2241,65 @@ $random_data = array(
 'biz',
 'me',
 'tv',
-'fm'));
+'fm'),
+'lorem_ipsum'=>'Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Aliquam sollicitudin metus eget felis mattis in cursus est semper. 
+Pellentesque commodo pulvinar volutpat. Duis nec sem purus, in consectetur tortor. 
+Quisque vitae odio libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+In luctus laoreet risus, sed lacinia augue consequat ac. Quisque lacinia venenatis dolor, 
+ac adipiscing ante eleifend vel.
+
+Cras ut ipsum et tortor pretium faucibus. Vivamus volutpat ultrices bibendum. 
+Pellentesque et hendrerit mi. Vivamus neque risus, varius in semper a, elementum sed turpis. 
+Donec ligula lacus, posuere a condimentum ac, ultrices id ligula. 
+Donec feugiat augue aliquam ante pulvinar eget varius turpis accumsan.
+ Praesent lorem urna, aliquam in egestas at, convallis at nisl. 
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+  Duis hendrerit, mauris et porttitor gravida, quam dui dapibus eros, eu dictum elit augue ut enim.
+   Suspendisse varius lacus ut metus vehicula sit amet suscipit nulla auctor. Vestibulum cursus libero
+    vel massa consectetur tempor placerat leo accumsan. Fusce vestibulum aliquet urna ut dignissim. 
+    Praesent justo felis, suscipit sed luctus eu, rutrum vel diam.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+Maecenas facilisis egestas urna, ut dapibus purus sollicitudin sit amet. Sed a velit sem,
+nec rutrum tortor. Vivamus ac lectus justo. Vivamus ultricies ultricies leo, vitae aliquam nisi ornare ut. 
+Pellentesque odio nisi, semper ac accumsan a, bibendum ac arcu. Curabitur congue pulvinar mauris eget tempus. 
+Cras volutpat iaculis sodales. Aenean pulvinar ligula ipsum, ut vestibulum lectus. Curabitur a nisl dui. 
+Cras in metus et turpis venenatis imperdiet. Maecenas sollicitudin augue odio, at aliquam massa.
+ Integer justo nibh, consectetur egestas pellentesque ac, tristique ac lacus. Donec euismod turpis eu nisi faucibus mollis.
+ Donec massa sapien, pharetra sit amet posuere a, dictum eu ante. Nunc fringilla lectus nec magna consectetur vel vulputate nisl lacinia.
+
+Phasellus diam arcu, rutrum ac lacinia at, malesuada quis velit. 
+Praesent auctor dolor non ipsum rutrum tincidunt vulputate orci commodo. 
+In et augue dolor, ut faucibus lorem. Ut pellentesque luctus fermentum. 
+Mauris pharetra odio sit amet nibh tristique faucibus. Fusce in nunc commodo sem dapibus dictum.
+ Sed libero sapien, euismod placerat adipiscing eu, luctus in quam. 
+ Pellentesque at lacus vitae felis gravida suscipit. Nullam ultrices, 
+ quam a posuere interdum, eros nibh bibendum dolor, eu suscipit diam massa sed odio.
+ Nam gravida lectus et nulla lacinia tincidunt. Curabitur tempus blandit sapien at pretium. 
+ Fusce scelerisque ornare nibh non elementum. Nullam dignissim, metus euismod viverra pharetra, 
+ lectus arcu dictum neque, et posuere mauris lectus sed quam. Quisque tempus ipsum non tortor tempor tincidunt. 
+ Pellentesque a tincidunt mi.
+
+Morbi quis odio elit. Aenean mattis, 
+felis quis egestas consequat, magna dolor adipiscing lectus, varius semper urna est at risus. Nulla ut eros ante. Lorem ipsum dolor sit amet, c
+onsectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi egestas erat vel nisl
+ sollicitudin et consequat eros facilisis. Quisque convallis interdum elementum. Nulla sit amet vestibulum lectus. Quisque ac lacus vitae quam 
+ fringilla egestas ac sit amet turpis. Maecenas vel augue sed metus rhoncus pellentesque mollis ac urna.
+
+Morbi venenatis erat et dolor placerat vulputate. Vestibulum nibh dui, rhoncus et laoreet dapibus, 
+vestibulum elementum dolor. Proin fringilla, erat quis volutpat blandit, lacus lacus porta nunc, quis egestas orci massa ut purus. 
+Nullam in dui enim, non tempor tellus. Mauris quam erat, rutrum eu mollis eu, tincidunt feugiat libero. Nunc pharetra luctus metus, 
+eget dignissim odio convallis at. Nam mauris neque, tincidunt eu eleifend at, dictum eu diam. Duis sed metus at risus viverra auctor. 
+Vivamus hendrerit nibh at mauris commodo in venenatis urna accumsan. Quisque libero ipsum, placerat eget pulvinar eu, fringilla ac ligula.
+
+Phasellus eu lectus ut urna pellentesque facilisis at sit amet justo. In laoreet, diam ut pretium venenatis, lacus augue ornare orci, 
+in gravida sem massa eget velit. Nulla quis lorem a quam sollicitudin dignissim. Praesent accumsan auctor porttitor. Pellentesque tempus 
+aliquam tincidunt. Vestibulum eget arcu tellus. Donec scelerisque laoreet erat at ullamcorper. Cum sociis natoque penatibus et magnis dis 
+parturient montes, nascetur ridiculus mus. Nullam non lacus justo, faucibus mattis metus. Nullam tempor orci sit amet eros molestie feugiat.
+ Proin porta est nec quam ullamcorper dapibus. Nunc luctus ornare ante, vitae consequat sem condimentum sit amet. Class aptent taciti sociosqu 
+ ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+  himenaeos. Phasellus vitae commodo velit.');
 
 	return $random_data[$key];
 }
